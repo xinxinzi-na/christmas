@@ -663,7 +663,7 @@ class IceLettering:
         name = "wyj"
         font_path = pygame.font.match_font("notoserifcjksc,notosanscjksc,wqyzenhei")
         font = pygame.font.Font(font_path, max(16, round(h * 0.023)))
-        self.name = font.render(name, True, (205, 227, 250))
+        self.name = font.render(name, True, (255, 182, 213))
         self.name_at = self.name.get_rect(center=(w // 2, round(h * 0.20))).topleft
         self.wish, margin, cap_h = _ice_inscription("May all your wishes come true.", wish_w, False)
         self.wish_at = ((w - self.wish.get_width())//2, round(h*.918 - cap_h*.5) - margin)
